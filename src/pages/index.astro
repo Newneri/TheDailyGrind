@@ -1,6 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Background from "../assets/images/coffeeBeans.png";
 ---
 
 <Layout>
+    <div class="relative w-full min-h-screen overflow-x-hidden text-off-black" style={`background-image: url(${Background.src}); background-size: cover; background-position: center;`}>
+        <Header />
+        <Hero />
+    </div>
 </Layout>

@@ -1,2 +1,38 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    /* Primary Colors */
+    --color-dark-coffee: #4A3C32;
+    --color-warm-cream: #F5F2EC;
+
+    /* Secondary Colors */
+    --color-toasted-almond: #C2B2A2;
+    --color-deep-forest-green: #5D6D5F;
+
+    /* Accent Colors */
+    --color-burnt-orange: #CC7A46;
+    --color-soft-gold: #D4A373;
+
+    /* Neutral & Utility Colors */
+    --color-off-black: #2C2C2C;
+    --color-light-gray: #E0DCD7;
+    --color-pure-white: #FFFFFF;
+
+    /* Font Families */
+    --font-serif: 'Merriweather', serif;
+    --font-sans-serif: 'Montserrat', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-burnt-orange);
+  color: var(--color-warm-cream);
+  text-shadow: none;
+}
+
+::-webkit-scrollbar-track {background: transparent}
