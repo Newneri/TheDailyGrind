@@ -1,0 +1,175 @@
+---
+import espressoImg from '../assets/images/drinks/espresso.png';
+import cappucinoImg from '../assets/images/drinks/cappucino.png';
+import latteVanilleImg from '../assets/images/drinks/latteVanille.png';
+import cafeGlaceImg from '../assets/images/drinks/cafeGlace.png';
+import moccaImg from '../assets/images/drinks/mocca.png';
+---
+
+<section class="relative bg-off-black py-20 md:py-32 overflow-hidden" id="menu">
+    <!-- Vertical "CAFE" Background Text -->
+    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pointer-events-none z-2">
+        <div class="text-warm-cream/2 font-bold text-[12rem] md:text-[18rem] lg:text-[24rem] tracking-tighter whitespace-nowrap">
+            <span>CAFE CAFE CAFE CAFE <br />CAFE CAFE CAFE CAFE</span>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-warm-cream mb-4">
+                Notre Menu
+            </h2>
+            <p class="text-lg md:text-xl text-warm-cream/80 max-w-2xl mx-auto">
+                Découvrez nos boissons artisanales préparées avec passion
+            </p>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="relative">
+            <!-- Carousel Track -->
+            <div class="carousel-track flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-8" id="carousel">
+                <!-- Drink Card 1 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={espressoImg.src} alt="Espresso" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Espresso</h3>
+                            <p class="text-dark-coffee/70 mb-4">Café corsé et intense, parfait pour commencer la journée</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">3.50€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Card 2 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={cappucinoImg.src} alt="Cappuccino" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Cappuccino</h3>
+                            <p class="text-dark-coffee/70 mb-4">Espresso onctueux avec mousse de lait veloutée</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">4.50€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Card 3 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={latteVanilleImg.src} alt="Latte Vanille" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Latte Vanille</h3>
+                            <p class="text-dark-coffee/70 mb-4">Café crémeux avec une touche de vanille naturelle</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">5.00€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Card 4 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={cafeGlaceImg.src} alt="Café Glacé" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Café Glacé</h3>
+                            <p class="text-dark-coffee/70 mb-4">Rafraîchissant et énergisant, idéal pour l'été</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">4.80€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Card 5 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={moccaImg.src} alt="Moka" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Moka</h3>
+                            <p class="text-dark-coffee/70 mb-4">L'alliance parfaite du café et du chocolat</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">5.20€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button id="prev-btn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-burnt-orange text-pure-white p-4 rounded-full shadow-lg hover:bg-dark-coffee transition-colors z-10 hidden md:block">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button id="next-btn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-burnt-orange text-pure-white p-4 rounded-full shadow-lg hover:bg-dark-coffee transition-colors z-10 hidden md:block">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Hide scrollbar but keep functionality */
+    .carousel-track {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+    
+    .carousel-track::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+</style>
+
+<script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    if (carousel && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -340,
+                behavior: 'smooth'
+            });
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: 340,
+                behavior: 'smooth'
+            });
+        });
+    }
+</script>
