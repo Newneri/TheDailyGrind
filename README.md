@@ -1,71 +1,275 @@
-"The Daily Grind" - Complete Color Palette
-Concept: Earthy, warm, inviting, sophisticated yet rustic.
+# ☕ The Daily Grind
 
-Primary Colors (Core Brand Identity)
-    These are the most dominant colors, used for large sections, main text, and key branding elements.
+> Un site web élégant et chaleureux pour café artisanal, construit avec Astro et Tailwind CSS v4.
 
-    Dark Coffee Brown: #4A3C32
+![Astro](https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-        Usage: Main text, navigation, footers, background elements, outlines. This color grounds the design and evokes the richness of coffee.
+---
 
-    Warm Cream: #F5F2EC
+## 📋 Table des Matières
 
-        Usage: Main background color for content areas, cards, sections. Provides a clean, soft canvas.
+- [À Propos](#-à-propos)
+- [Démarrage Rapide](#-démarrage-rapide)
+- [Structure du Projet](#-structure-du-projet)
+- [Palette de Couleurs](#-palette-de-couleurs)
+- [Technologies Utilisées](#-technologies-utilisées)
+- [Scripts Disponibles](#-scripts-disponibles)
+- [Comment Contribuer](#-comment-contribuer)
+- [Bonnes Pratiques](#-bonnes-pratiques)
 
-Secondary Colors (Supporting Elements)
-    Used to complement the primary colors and add depth.
+---
 
-    Toasted Almond (Light Brown/Beige): #C2B2A2
+## 🎯 À Propos
 
-        Usage: Secondary backgrounds, dividing lines, borders, hover states for buttons, subtle accents on cards.
+**The Daily Grind** est un site web moderne pour café artisanal présentant :
+- 🎨 Design terreux et chaleureux inspiré du monde du café
+- 🌊 Transitions SVG ondulées élégantes
+- 📱 Interface entièrement responsive
+- 🎠 Carousel de menu interactif
+- 🇫🇷 Contenu en français
 
-    Deep Forest Green: #5D6D5F
+---
 
-        Usage: Accents, important links, icons, subtle branding elements, headers of specific sections (e.g., "Menu," "About Us"). Connects to the "leaf" in the logo and natural elements.
+## 🚀 Démarrage Rapide
 
-Accent Colors (Pops of Energy & Call to Action)
-    Used sparingly to draw attention to important elements like buttons, calls to action, or special offers.
+### Prérequis
 
-    Rich Burnt Orange: #CC7A46
+- **Node.js** : v18.0.0 ou supérieur
+- **pnpm** : Gestionnaire de paquets recommandé
 
-        Usage: Primary call-to-action buttons (e.g., "View Menu," "Order Now"), highlights, special promotions, active states. Brings warmth and energy.
+### Installation
 
-    Soft Gold: #D4A373
+```bash
+# Cloner le repository
+git clone https://github.com/Newneri/TheDailyGrind.git
 
-        Usage: Subtle highlights, small decorative elements, perhaps text on a darker background where you want a premium feel.
+# Naviguer dans le dossier
+cd TheDailyGrind
 
-Neutral & Utility Colors (Text & UI)
-    For various text shades, borders, and functional UI elements.
+# Installer les dépendances
+pnpm install
 
-    Off-Black (for dark text on light backgrounds): #2C2C2C
+# Lancer le serveur de développement
+pnpm dev
+```
 
-        Usage: Main body text, headings on light backgrounds. Softer than pure black.
+Le site sera accessible sur `http://localhost:4321` 🎉
 
-    Light Gray (for subtle borders/dividers): #E0DCD7
+---
 
-        Usage: Subtle borders, disabled states, very light backgrounds.
+## 📁 Structure du Projet
 
-    Pure White (for contrast where needed): #FFFFFF
+```
+TheDailyGrind/
+├── public/              # Fichiers statiques (favicon, logo)
+├── src/
+│   ├── assets/          # Images et ressources
+│   │   └── images/
+│   │       └── drinks/  # Photos des boissons
+│   ├── components/      # Composants Astro
+│   │   ├── Header.astro    # Navigation principale
+│   │   ├── Hero.astro      # Section héro avec transitions
+│   │   └── Menu.astro      # Carousel de menu
+│   ├── layouts/
+│   │   └── Layout.astro    # Layout principal
+│   ├── pages/
+│   │   └── index.astro     # Page d'accueil
+│   └── styles/
+│       └── global.css      # Styles globaux et configuration Tailwind
+├── astro.config.mjs     # Configuration Astro
+├── package.json
+└── tsconfig.json
+```
 
-        Usage: Small amounts of text on dark backgrounds, icons that need to stand out.
+---
 
+## 🎨 Palette de Couleurs
 
-Summary of the Palette:
+Notre palette évoque la chaleur et l'authenticité d'un café artisanal :
 
-    Dark Coffee Brown: #4A3C32 (Primary Dark)
+### Couleurs Principales
 
-    Warm Cream: #F5F2EC (Primary Light Background)
+| Couleur | Hex | Usage | Aperçu |
+|---------|-----|-------|--------|
+| **Dark Coffee** | `#4A3C32` | Texte principal, navigation | 🟤 |
+| **Warm Cream** | `#F5F2EC` | Arrière-plans clairs | ⚪ |
 
-    Toasted Almond: #C2B2A2 (Secondary Accent)
+### Couleurs Secondaires
 
-    Deep Forest Green: #5D6D5F (Secondary Accent)
+| Couleur | Hex | Usage | Aperçu |
+|---------|-----|-------|--------|
+| **Toasted Almond** | `#C2B2A2` | Arrière-plans secondaires, bordures | 🟫 |
+| **Deep Forest Green** | `#5D6D5F` | Accents, liens, icônes | 🟢 |
 
-    Rich Burnt Orange: #CC7A46 (Main Accent / CTA)
+### Couleurs d'Accent
 
-    Soft Gold: #D4A373 (Secondary Accent)
+| Couleur | Hex | Usage | Aperçu |
+|---------|-----|-------|--------|
+| **Burnt Orange** | `#CC7A46` | Boutons CTA, highlights | 🟠 |
+| **Soft Gold** | `#D4A373` | Éléments décoratifs premium | 🟡 |
 
-    Off-Black: #2C2C2C (Text)
+### Couleurs Utilitaires
 
-    Light Gray: #E0DCD7 (Dividers/Borders)
+| Couleur | Hex | Usage | Aperçu |
+|---------|-----|-------|--------|
+| **Off-Black** | `#2C2C2C` | Texte sur fonds clairs | ⚫ |
+| **Light Gray** | `#E0DCD7` | Bordures subtiles, dividers | ⚪ |
+| **Pure White** | `#FFFFFF` | Contraste élevé | ⚪ |
 
-    Pure White: #FFFFFF (Contrast)
+### Utilisation dans le Code
+
+```astro
+<!-- Classes Tailwind avec couleurs personnalisées -->
+<div class="bg-warm-cream text-dark-coffee">
+  <button class="bg-burnt-orange hover:bg-dark-coffee text-pure-white">
+    Commander
+  </button>
+</div>
+```
+
+---
+
+## 🛠 Technologies Utilisées
+
+- **[Astro](https://astro.build/)** - Framework web moderne et ultra-rapide
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript typé
+- **[pnpm](https://pnpm.io/)** - Gestionnaire de paquets rapide et efficace
+
+---
+
+## 📜 Scripts Disponibles
+
+```bash
+# Développement - Lance le serveur avec hot reload
+pnpm astro dev
+
+# Build - Compile le site pour la production
+pnpm astro build
+
+# Preview - Prévisualise le build de production
+pnpm astro preview
+
+# Astro CLI - Accède aux commandes Astro
+pnpm astro
+```
+
+---
+
+## 🤝 Comment Contribuer
+
+Nous accueillons les contributions ! Voici comment participer :
+
+### 1. Fork & Clone
+
+```bash
+# Fork le projet sur GitHub puis clone ton fork
+git clone https://github.com/TON-USERNAME/TheDailyGrind.git
+cd TheDailyGrind
+```
+
+### 2. Créer une Branche
+
+```bash
+# Créer une branche pour ta fonctionnalité
+git checkout -b feature/ma-nouvelle-fonctionnalite
+
+# Ou pour un bug fix
+git checkout -b fix/correction-bug
+```
+
+### 3. Développer
+
+```bash
+# Installer les dépendances
+pnpm install
+
+# Lancer le serveur de dev
+pnpm dev
+
+# Faire tes modifications...
+```
+
+### 4. Commit & Push
+
+```bash
+# Ajouter tes changements
+git add .
+
+# Commit avec un message clair
+git commit -m "✨ Ajout: nouvelle section blog"
+
+# Push vers ton fork
+git push origin feature/ma-nouvelle-fonctionnalite
+```
+
+### 5. Pull Request
+
+Ouvre une Pull Request sur le repo principal avec :
+- 📝 Description claire des changements
+- 🖼️ Screenshots si modifications visuelles
+- ✅ Tests effectués
+
+---
+
+## ✨ Bonnes Pratiques
+
+### Code Style
+
+- **Composants** : Utiliser des composants Astro (`.astro`) pour les éléments réutilisables
+- **Tailwind** : Privilégier les classes utilitaires, éviter le CSS custom
+- **Responsive** : Mobile-first approach avec les breakpoints `sm:`, `md:`, `lg:`, `xl:`
+- **Accessibilité** : Toujours inclure des attributs `alt` sur les images
+
+### Commits
+
+Utiliser des préfixes clairs :
+- `✨ Ajout:` - Nouvelle fonctionnalité
+- `🐛 Fix:` - Correction de bug
+- `💄 Style:` - Changements visuels
+- `📝 Doc:` - Documentation
+- `♻️ Refactor:` - Refactorisation de code
+- `🚀 Perf:` - Amélioration de performance
+
+### Structure des Fichiers
+
+```
+src/components/NouveauComposant.astro
+```
+
+```astro
+---
+// Imports et logique TypeScript
+import type { Props } from './types';
+---
+
+<!-- Markup HTML -->
+<section class="bg-warm-cream">
+  <!-- Contenu -->
+</section>
+
+<style>
+  /* Styles scopés si nécessaire */
+</style>
+```
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+---
+
+## 💬 Contact & Support
+
+- 🐛 **Issues** : [GitHub Issues](https://github.com/Newneri/TheDailyGrind/issues)
+- 💡 **Discussions** : [GitHub Discussions](https://github.com/Newneri/TheDailyGrind/discussions)
+
+---
+
+<p align="center">
+  Fait avec ❤️ et beaucoup de ☕
+</p>
