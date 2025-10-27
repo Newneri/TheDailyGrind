@@ -4,13 +4,24 @@ import cappucinoImg from '../assets/images/drinks/cappucino.png';
 import latteVanilleImg from '../assets/images/drinks/latteVanille.png';
 import cafeGlaceImg from '../assets/images/drinks/cafeGlace.png';
 import moccaImg from '../assets/images/drinks/mocca.png';
+
+import croissantImg from '../assets/images/apetizers/croissant.png';
+import painChocolatImg from '../assets/images/apetizers/painChocolat.png';
+import muffinImg from '../assets/images/apetizers/muffin.png';
+import eclairImg from '../assets/images/apetizers/eclair.png';
+import tarteFruitsImg from '../assets/images/apetizers/tarteFruits.png';
 ---
 
 <section class="relative bg-off-black py-20 md:py-32 overflow-hidden" id="menu">
     <!-- Vertical "CAFE" Background Text -->
     <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pointer-events-none z-2">
         <div class="text-warm-cream/2 font-bold text-[12rem] md:text-[18rem] lg:text-[24rem] tracking-tighter whitespace-nowrap">
-            <span>CAFE CAFE CAFE CAFE <br />CAFE CAFE CAFE CAFE</span>
+            <span>CAFE CAFE CAFE CAFE <br />
+                CAFE CAFE CAFE CAFE <br/>
+                CAFE CAFE CAFE CAFE <br/>
+                CAFE CAFE CAFE CAFE <br/>
+                CAFE CAFE CAFE CAFE
+            </span>
         </div>
     </div>
 
@@ -49,7 +60,7 @@ import moccaImg from '../assets/images/drinks/mocca.png';
                 </div>
 
                 <!-- Drink Card 2 -->
-                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center ">
                     <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                         <div class="h-64 bg-toasted-almond overflow-hidden">
                             <img src={cappucinoImg.src} alt="Cappuccino" class="w-full h-full object-cover" />
@@ -138,6 +149,134 @@ import moccaImg from '../assets/images/drinks/mocca.png';
             </button>
         </div>
     </div>
+
+    <!-- Appetizers Section -->
+    <div class="max-w-7xl mx-auto px-6 relative z-10 mt-32">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-warm-cream mb-4">
+                Nos Pâtisseries
+            </h2>
+            <p class="text-lg md:text-xl text-warm-cream/80 max-w-2xl mx-auto">
+                Savourez nos délices artisanaux, parfaits avec votre café
+            </p>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="relative">
+            <!-- Carousel Track -->
+            <div class="carousel-track flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-8" id="carousel-appetizers">
+                <!-- Appetizer Card 1 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={croissantImg.src} alt="Croissant" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Croissant</h3>
+                            <p class="text-dark-coffee/70 mb-4">Croissant feuilleté au beurre, croustillant et fondant</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">2.50€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizer Card 2 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={painChocolatImg.src} alt="Pain au Chocolat" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Pain au Chocolat</h3>
+                            <p class="text-dark-coffee/70 mb-4">Viennoiserie dorée avec barres de chocolat noir</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">2.80€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizer Card 3 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={muffinImg.src} alt="Muffin" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Muffin</h3>
+                            <p class="text-dark-coffee/70 mb-4">Moelleux aux pépites de chocolat ou myrtilles</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">3.20€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizer Card 4 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={eclairImg.src} alt="Éclair" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Éclair</h3>
+                            <p class="text-dark-coffee/70 mb-4">Pâte à choux garnie de crème pâtissière vanille</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">3.80€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizer Card 5 -->
+                <div class="carousel-item min-w-[280px] md:min-w-[320px] snap-center">
+                    <div class="bg-pure-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="h-64 bg-toasted-almond overflow-hidden">
+                            <img src={tarteFruitsImg.src} alt="Tarte aux Fruits" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-dark-coffee mb-2">Tarte aux Fruits</h3>
+                            <p class="text-dark-coffee/70 mb-4">Tarte fraîche garnie de fruits rouges et jaunes de saison</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-burnt-orange">4.50€</span>
+                                <button class="px-4 py-2 bg-burnt-orange text-pure-white rounded-full hover:bg-dark-coffee transition-colors">
+                                    Commander
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button id="prev-btn-appetizers" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-burnt-orange text-pure-white p-4 rounded-full shadow-lg hover:bg-dark-coffee transition-colors z-10 hidden md:block">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button id="next-btn-appetizers" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-burnt-orange text-pure-white p-4 rounded-full shadow-lg hover:bg-dark-coffee transition-colors z-10 hidden md:block">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
 </section>
 
 <style>
@@ -167,6 +306,27 @@ import moccaImg from '../assets/images/drinks/mocca.png';
         
         nextBtn.addEventListener('click', () => {
             carousel.scrollBy({
+                left: 340,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Appetizers carousel
+    const carouselAppetizers = document.getElementById('carousel-appetizers');
+    const prevBtnAppetizers = document.getElementById('prev-btn-appetizers');
+    const nextBtnAppetizers = document.getElementById('next-btn-appetizers');
+    
+    if (carouselAppetizers && prevBtnAppetizers && nextBtnAppetizers) {
+        prevBtnAppetizers.addEventListener('click', () => {
+            carouselAppetizers.scrollBy({
+                left: -340,
+                behavior: 'smooth'
+            });
+        });
+        
+        nextBtnAppetizers.addEventListener('click', () => {
+            carouselAppetizers.scrollBy({
                 left: 340,
                 behavior: 'smooth'
             });

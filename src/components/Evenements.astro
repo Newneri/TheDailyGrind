@@ -1,0 +1,147 @@
+---
+import atelierLatteArtImg from '../assets/images/events/atelierLatte.png';
+import jazzImg from '../assets/images/events/jazz.png';
+---
+
+<section class="relative bg-warm-cream py-20 md:py-32 overflow-hidden" id="evenements">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-coffee mb-4">
+                Nos Événements
+            </h2>
+            <p class="text-lg md:text-xl text-dark-coffee/70 max-w-2xl mx-auto">
+                Rejoignez-nous pour des moments uniques autour du café
+            </p>
+        </div>
+
+        <!-- Event 1 - Left Image -->
+        <div class="mb-32 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+            <!-- Image -->
+            <div class="w-full lg:w-1/2">
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl group">
+                    <img src={atelierLatteArtImg.src} alt="Atelier Latte Art" class="w-full h-full object-cover aspect-4/3"/>
+                    <!-- Overlay on hover -->
+                    <div class="absolute inset-0 bg-dark-coffee/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-full lg:w-1/2">
+                <!-- Event Badge -->
+                <div class="inline-flex items-center gap-2 bg-burnt-orange/10 text-burnt-orange px-4 py-2 rounded-full mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="font-semibold">Samedi 15 Novembre 2025</span>
+                </div>
+
+                <h3 class="text-3xl md:text-4xl font-bold text-dark-coffee mb-4">
+                    Atelier Latte Art
+                </h3>
+
+                <p class="text-lg text-dark-coffee/70 mb-6 leading-relaxed">
+                    Apprenez l'art de créer de magnifiques dessins sur vos cappuccinos et lattes. Notre barista expert vous guidera à travers les techniques de base et avancées pour maîtriser le latte art.
+                </p>
+
+                <!-- Event Details -->
+                <div class="space-y-3 mb-8">
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-burnt-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span><strong>Horaire :</strong> 14h00 - 17h00</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-burnt-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span><strong>Places :</strong> 12 participants maximum</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-burnt-orange shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span><strong>Prix :</strong> 35€ (matériel inclus)</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button class="px-8 py-3 bg-burnt-orange text-pure-white font-semibold rounded-full hover:bg-dark-coffee transition-colors duration-300 shadow-lg hover:shadow-xl">
+                    Réserver ma place
+                </button>
+            </div>
+        </div>
+
+        <!-- Event 2 - Right Image -->
+        <div class="mb-20 flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 items-center">
+            <!-- Image -->
+            <div class="w-full lg:w-1/2">
+                <div class="relative overflow-hidden rounded-3xl shadow-2xl group">
+                    <img src={jazzImg.src} alt="Soirée Jazz & Café" class="w-full h-full object-cover aspect-4/3" />
+                    <!-- Overlay on hover -->
+                    <div class="absolute inset-0 bg-dark-coffee/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-full lg:w-1/2">
+                <!-- Event Badge -->
+                <div class="inline-flex items-center gap-2 bg-deep-forest-green/10 text-deep-forest-green px-4 py-2 rounded-full mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="font-semibold">Vendredi 22 Novembre 2025</span>
+                </div>
+
+                <h3 class="text-3xl md:text-4xl font-bold text-dark-coffee mb-4">
+                    Soirée Jazz & Café
+                </h3>
+
+                <p class="text-lg text-dark-coffee/70 mb-6 leading-relaxed">
+                    Une soirée intime mêlant musique jazz live et dégustation de nos cafés d'exception. Découvrez nos grains rares du monde entier dans une ambiance chaleureuse et musicale.
+                </p>
+
+                <!-- Event Details -->
+                <div class="space-y-3 mb-8">
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-deep-forest-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span><strong>Horaire :</strong> 19h30 - 23h00</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-deep-forest-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span><strong>Places :</strong> 40 participants maximum</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-deep-forest-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+                        </svg>
+                        <span><strong>Artiste :</strong> Le Trio Manouche</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-dark-coffee/80">
+                        <svg class="w-5 h-5 text-deep-forest-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span><strong>Entrée :</strong> 15€ (dégustation incluse)</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button class="px-8 py-3 bg-deep-forest-green text-pure-white font-semibold rounded-full hover:bg-dark-coffee transition-colors duration-300 shadow-lg hover:shadow-xl">
+                    Réserver ma place
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Wave Transition (Optional) -->
+    <div class="absolute bottom-0 left-0 w-full">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M0,60 C360,10 720,10 1080,60 C1260,85 1350,85 1440,60 L1440,120 L0,120 Z" fill="#2C2C2C"/>
+        </svg>
+    </div>
+</section>
